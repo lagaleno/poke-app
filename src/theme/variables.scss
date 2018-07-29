@@ -38,7 +38,8 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  galeno: 	  #b71616
 );
 
 
@@ -83,6 +84,6 @@ $colors: (
 
 // Fonts
 // --------------------------------------------------
-
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 @import "roboto";
 @import "noto-sans";
