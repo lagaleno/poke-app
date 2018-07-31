@@ -20,4 +20,13 @@
 	<p class="texto"> Olá Mestre Pokemon </p>
 
 	<button ion-button full color="galeno" class="texto" (click)="getPokemon()"> A wild Pokemon Appears </button>
+
+  <ion-list>
+    <li *ngFor="let p of pokemons"> <!-- pokemons vem do .ts -->
+      <ion-item>   <!-- Só exibe quando o pokemon nao for undf ou Null-->
+        <h2>{{ p.name }}</h2>
+      </ion-item>
+    </li>
+  </ion-list>
+  
 </ion-content>
