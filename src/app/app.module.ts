@@ -8,6 +8,7 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { PokemonPage } from '../pages/pokemon/pokemon';
 import { FormsPage } from '../pages/forms/forms';
+import { ModalPage } from '../pages/modal/modal';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -19,7 +20,8 @@ import { PokemonProvider } from '../providers/pokemon/pokemon';
     HomePage,
     ListPage,
     PokemonPage,
-    FormsPage
+    FormsPage,
+    ModalPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import { PokemonProvider } from '../providers/pokemon/pokemon';
     HomePage,
     ListPage,
     PokemonPage,
-    FormsPage
+    FormsPage,
+    ModalPage
   ],
   providers: [
     StatusBar,

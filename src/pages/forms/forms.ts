@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
+import { ModalPage } from '../modal/modal';
 
 /**
  * Generated class for the FormsPage page.
@@ -15,7 +16,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class FormsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public modalCtrl: ModalController, public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
@@ -24,5 +25,10 @@ export class FormsPage {
 
   onSubmit(form) {
   	console.log(form.value.nome)
+  }
+
+  presentModal() {
+   	let exemploModal = this.modalCtrl.create(ModalPage);
+   	exemploModal.present();
   }
 }
